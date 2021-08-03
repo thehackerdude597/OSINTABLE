@@ -7,7 +7,7 @@ colorama.init()
 figlet = Figlet(font='standard')
 print(figlet.renderText("OSINTABLE"))
 
-print(Fore.CYAN + 'v1.0')
+print(Fore.CYAN + 'v1.1')
 
 print(Fore.LIGHTMAGENTA_EX + 'Tools: Reverse Name, Address, or Phone ex:type "reverse" to start. Find social media accounts ex:"username" to start')
 
@@ -56,7 +56,7 @@ if user_prompt == "username":
     print(Fore.MAGENTA + username + '.blogger.com')
 print(Fore.LIGHTGREEN_EX + 'If ANY Errors please add them so I can fix them')
 if user_prompt == "reverse":
-    print(Fore.LIGHTYELLOW_EX + 'TAGS: --reversename. Be SURE to add these at the end of your search as if you do not it will nit work. BEFORE YOU RUN YOUR SEARCH --Search is required')
+    print(Fore.LIGHTYELLOW_EX + 'Put a COMMA between the city and state! or else it will not work')
     name = input('Name:')
     city_state = input("City or state:")
     print(Fore.LIGHTYELLOW_EX + 'https://www.truepeoplesearch.com/results?name=' + name + '&citystatezip=' + city_state)
